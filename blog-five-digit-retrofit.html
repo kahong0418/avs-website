@@ -1,0 +1,222 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Four Digits to Five — Retrofitting a Price Display Without Cutting the Light Box</title>
+<meta name="description" content="Upgrading an AVS Price Change Unit from 4-digit to 5-digit: move the decimal from the remote, or extend the frame with two rails and one module — keeping about 90% of the existing components.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Sora:wght@600;700;800&display=swap" rel="stylesheet">
+<link rel="icon" href="assets/favicon.ico" sizes="any">
+<link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="assets/favicon-16x16.png">
+<link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
+<meta name="theme-color" content="#0a2540">
+<link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+<header class="site-header">
+ <div class="container nav">
+  <a class="brand" href="index.html">
+   <img src="assets/avs-logo.png" alt="AVS Display Sdn Bhd" class="brand-logo">
+   <span><span class="bn">AVS Display</span></span>
+  </a>
+  <ul class="nav-menu">
+   <li class="has-dd"><a href="products.html">Products <i class="caret"></i></a>
+    <ul class="dropdown">
+     <li><a href="products.html"><b>All Products</b><span>Overview of the AVS range</span></a></li>
+     <li><a href="product-pcu.html"><b>Price Change Unit (PCU)</b><span>Complete system: display + controller + remote</span></a></li>
+     <li><a href="product-led-tubes.html"><b>LED Tubes</b><span>ATHH Green &amp; ColorLine</span></a></li>
+     <li><a href="product-colorline.html"><b>&nbsp;&nbsp;· ColorLine Tube</b><span>Decorative identity lighting</span></a></li>
+     <li><a href="product-athh.html"><b>&nbsp;&nbsp;· ATHH Green Tube</b><span>High-brightness canopy edge</span></a></li>
+     <li><a href="product-led-modules.html"><b>LED Modules</b><span>Hyperlite high-brightness</span></a></li>
+     <li><a href="product-lens-strip.html"><b>Lens Strip</b><span>Osram wide-angle strip</span></a></li>
+     <li><a href="product-edge-lighting.html"><b>Edge Lighting Strip</b><span>Coloured edge &amp; fascia lines</span></a></li>
+     <li><a href="integrations.html"><b>POS / IFSF Integration</b><span>Forecourt controller link</span></a></li>
+    </ul></li>
+   <li class="has-dd"><a href="solutions.html">Solutions <i class="caret"></i></a>
+    <ul class="dropdown">
+     <li><a href="solutions.html"><b>All Solutions</b><span>By industry &amp; use case</span></a></li>
+     <li><a href="solutions-petrol-stations.html"><b>Petrol Stations</b><span>Forecourt price &amp; lighting</span></a></li>
+    </ul></li>
+   <li class="has-dd active"><a href="resources.html">Resources <i class="caret"></i></a>
+    <ul class="dropdown">
+     <li><a href="case-studies.html"><b>Case Studies</b><span>Petronas, Shell, Vivo &amp; more</span></a></li>
+     <li><a href="certifications.html"><b>Certifications</b><span>IFSF, CE, RoHS, FCC</span></a></li>
+     <li><a href="guides.html"><b>Installation Guides</b><span>Specs &amp; how-to</span></a></li>
+     <li><a href="faq.html"><b>FAQ</b><span>Common questions</span></a></li>
+     <li><a href="blog.html"><b>Blog</b><span>News &amp; insights</span></a></li>
+     <li><a href="support.html"><b>Support</b><span>Service &amp; warranty</span></a></li>
+    </ul></li>
+   <li class="has-dd"><a href="about.html">Company <i class="caret"></i></a>
+    <ul class="dropdown">
+     <li><a href="about.html"><b>About Us</b><span>Who we are</span></a></li>
+     <li><a href="distributors.html"><b>Distributors / OEM</b><span>Partner with AVS</span></a></li>
+     <li><a href="contact.html"><b>Contact</b><span>Get in touch</span></a></li>
+    </ul></li>
+  </ul>
+  <div class="nav-right">
+   <a class="btn btn-primary" href="https://wa.me/601169989498">WhatsApp Us</a>
+   <a class="btn btn-outline" href="quote.html">Request a Quote</a>
+   <button class="nav-toggle" aria-label="Menu" aria-expanded="false"><span></span><span></span><span></span></button>
+  </div>
+ </div>
+</header>
+<main>
+<section class="page-hero">
+ <div class="container">
+  <div class="breadcrumb"><a href="index.html">Home</a><span>/</span><a href="resources.html">Resources</a><span>/</span><a href="blog.html">Blog</a></div>
+  <h1>Four Digits to Five &mdash; Without Cutting Up the Light Box</h1>
+  <p>Pump prices outgrew the sign. On an AVS Price Change Unit that is a frame extension and a module, not a new display &mdash; and you keep about 90&nbsp;% of what is already on the pole.</p>
+ </div>
+</section>
+
+<section class="section">
+ <div class="container">
+  <div class="prose">
+   <p class="post-meta">By AVS Display &middot; Retrofit &middot; 13 August 2026</p>
+
+   <p>We have been getting the same question from operators in the Philippines: pump prices have trended up, their four-digit price displays can no longer show the number, and they want to know whether the system they already own can be upgraded &mdash; or whether the whole monolith has to be rebuilt.</p>
+
+   <p>On an AVS <a href="product-pcu.html">Price Change Unit</a> the answer is that it can be upgraded in place. You extend the frame, add one module, reconfigure from the remote, and re-seal. The cabinet stays, the controller stays, the cabling stays. This page walks through exactly what changes and what does not.</p>
+
+   <h2>First, check whether you even need a fifth digit</h2>
+
+   <p>Every digit on an AVS PCU carries its own decimal point. The dot is not fixed to one position at manufacture &mdash; it can be moved from one digit to the next at any time, from the remote, with no hardware change at all.</p>
+
+   <p>That matters more than it sounds. A number of sites that think they need a fifth character actually need the decimal in a different place. If that is your situation, the &ldquo;upgrade&rdquo; is a configuration change and costs you nothing but a few minutes at the sign. Check this before you order anything.</p>
+
+   <h2>If you do need the extra character: two rails, not a new sign</h2>
+
+   <p>Adding a fifth digit makes the display longer, so the frame has to grow with it. It does not follow that the sign has to be rebuilt.</p>
+
+   <ul class="checklist">
+    <li><b>You buy two extension rails</b> &mdash; the top and bottom members of the frame in a longer length.</li>
+    <li><b>The corner frames stay.</b> They are re-used as they are.</li>
+    <li><b>You buy one more digit module</b> for the new position.</li>
+    <li><b>Everything else is re-used</b> &mdash; roughly 90&nbsp;% of the components on the sign today stay on the sign.</li>
+   </ul>
+
+   <p>That 90&nbsp;% is the whole point of building the unit in modules rather than as one sealed panel. A digit is a module with a connector on it; the frame is an aluminium extrusion; neither is welded to the other.</p>
+
+   <figure style="margin:32px 0 0">
+    <div class="media-frame"><img src="assets/shots/IMG-PM-10-module-bay.jpg" alt="Opened display frames laid on a rack with the digit modules and their cabling exposed, hands working at the frame edge" loading="lazy"></div>
+    <figcaption style="color:var(--muted);font-size:.9rem;margin-top:12px">The unit opened up: digit modules seated in an aluminium frame, each with its own cable. Nothing here is bonded to anything else &mdash; which is why a digit can be added without rebuilding the sign.</figcaption>
+   </figure>
+
+   <h2>The six steps, in order</h2>
+
+   <table class="dtable">
+    <tr><th>1 &middot; Unplug the cables</th><td>Signal and power, disconnected at the side of the unit.</td></tr>
+    <tr><th>2 &middot; Adjust the frame</th><td>Swap the top and bottom members for the longer pair. Corner frames are re-used.</td></tr>
+    <tr><th>3 &middot; Install the module</th><td>Seat the additional digit module in the extended frame. Each module carries its own connector &mdash; plug and play.</td></tr>
+    <tr><th>4 &middot; Secure the module</th><td>Self-tapping screws through the aluminium into the main frame. Fixing into the extrusion does not touch the printed circuit board.</td></tr>
+    <tr><th>5 &middot; Connect the cables</th><td>Re-plug signal and power, then close the unit and confirm the water seal is properly made up.</td></tr>
+    <tr><th>6 &middot; Remote configuration</th><td>Set the operational mode and the decimal position from the remote so the controller addresses five characters instead of four.</td></tr>
+   </table>
+
+   <div class="grid grid-2" style="margin:32px 0">
+    <figure style="margin:0">
+     <div class="media-frame"><img src="assets/shots/IMG-PM-09-side-cables.jpg" alt="Row of IP-rated connectors on the side of the unit, with the cable loom being handled by hand" loading="lazy"></div>
+     <figcaption style="color:var(--muted);font-size:.88rem;margin-top:10px"><b>Step 1</b> &mdash; signal and power come off at the side of the unit, connector by connector.</figcaption>
+    </figure>
+    <figure style="margin:0">
+     <div class="media-frame"><img src="assets/shots/IMG-PM-08-connector-plug-in.jpg" alt="Two hands seating a plug-in connector onto a digit module inside the opened frame" loading="lazy"></div>
+     <figcaption style="color:var(--muted);font-size:.88rem;margin-top:10px"><b>Step 3</b> &mdash; each module carries its own connector. Seat it, plug it in, move on.</figcaption>
+    </figure>
+   </div>
+
+   <p>Steps 1 to 5 are mechanical and happen at the sign. Step 6 is the part people forget: a five-digit row is not a four-digit row with something added on the end, and the unit has to be told about the new position before it will display correctly.</p>
+
+   <h2>Do not skip the re-seal</h2>
+
+   <p>The one step where a retrofit can quietly go wrong is closing it back up. A forecourt display survives because it is sealed &mdash; our units ship with IP54&ndash;IP67 enclosures and IP68 cabling connectors precisely because the environment is unforgiving. Any unit that has been opened has to go back together to the same standard. Done properly this is routine. Done as an afternoon job, it is how water gets in and how a display that had another decade in it starts failing at the corners a season later.</p>
+
+   <h2>What to check on your own site first</h2>
+
+   <p>The conversion itself is straightforward. What varies from site to site is whether the sign has room for the longer frame, so have these ready before you ask us to quote:</p>
+
+   <table class="dtable">
+    <tr><th>Aperture inner dimensions</th><td>The clear opening in the sign face &mdash; this decides whether the longer frame fits behind it as-is</td></tr>
+    <tr><th>Current digit height and count</th><td>What is installed today, and on how many grade rows</td></tr>
+    <tr><th>Current decimal position</th><td>Because moving it may be all you need</td></tr>
+    <tr><th>Approach distance</th><td>Where the driver first reads the sign &mdash; see <a href="blog-digit-size.html">choosing the right digit size</a></td></tr>
+    <tr><th>Existing control method</th><td>Remote, counter terminal or <a href="integrations.html">POS / forecourt controller link</a> &mdash; affects step 6, not the hardware</td></tr>
+   </table>
+
+   <p>Aperture dimensions plus one photograph from the driver&rsquo;s approach is usually enough for our engineers to tell you whether your site is a straight frame extension or needs work on the face.</p>
+
+   <h2>Do one before you do the network</h2>
+
+   <p>If you run several stations, convert one first and stand at the approach to read it yourself before committing the rest. We build to order with <strong>no minimum quantity</strong> &mdash; one unit is a job we will take &mdash; so a single-site pilot is a normal order, not a favour.</p>
+
+   <p>And if the answer turns out to be that your existing units are not ours, tell us anyway. Knowing what is on the pole is usually enough for us to say whether it can be extended or whether you are better off replacing that row.</p>
+
+   <p style="margin-top:28px"><a href="blog.html">&larr; Back to blog</a></p>
+  </div>
+ </div>
+</section>
+
+<section class="section">
+ <div class="container">
+  <div class="cta-band">
+   <h2>Send us the aperture and one photo</h2>
+   <p>We&rsquo;ll tell you whether your fifth digit is a decimal-point setting, a frame extension, or genuinely a new row &mdash; before anyone orders anything.</p>
+   <div class="hero-cta">
+    <a class="btn btn-primary btn-lg" href="https://wa.me/601169989498">WhatsApp Us — same-day reply</a>
+    <a class="btn btn-outline btn-lg" href="quote.html">Request a Quote</a>
+    <a class="btn btn-ghost-light btn-lg" href="contact.html">Talk to an Engineer</a>
+   </div>
+  </div>
+ </div>
+</section>
+</main>
+<footer class="site-footer">
+ <div class="container">
+  <div class="footer-grid">
+   <div class="footer-brand">
+    <a class="brand" href="index.html"><img src="assets/avs-logo.png" alt="AVS Display Sdn Bhd" class="brand-logo"><span><span class="bn">AVS Display</span></span></a>
+    <p>LED gas price displays, LED tubes, modules and outdoor signage — engineered and manufactured in Malaysia for petrol-station forecourts for over 9 years.</p>
+    <div class="footer-contact">
+     <div>Nilai, Negeri Sembilan, Malaysia</div>
+     <div>Tel: 03-8740 9865 &nbsp;·&nbsp; Mobile: 017-289 4285</div>
+     <div>WhatsApp: <a href="https://wa.me/601169989498">+60 11-6998 9498</a> &nbsp;·&nbsp; same-day reply</div>
+     <div>Email: <a href="mailto:info@avs.my">info@avs.my</a></div>
+    </div>
+   </div>
+   <div><h4>Products</h4><ul>
+    <li><a href="product-pcu.html">Price Change Units</a></li>
+    <li><a href="product-led-tubes.html">LED Tubes</a></li>
+    <li><a href="product-led-modules.html">LED Modules</a></li>
+    <li><a href="product-lens-strip.html">Lens Strip</a></li>
+    <li><a href="product-edge-lighting.html">Edge Lighting Strip</a></li>
+    <li><a href="integrations.html">POS / IFSF Integration</a></li>
+   </ul></div>
+   <div><h4>Solutions</h4><ul>
+    <li><a href="solutions-petrol-stations.html">Petrol Stations</a></li>
+   </ul></div>
+   <div><h4>Resources</h4><ul>
+    <li><a href="case-studies.html">Case Studies</a></li>
+    <li><a href="certifications.html">Certifications</a></li>
+    <li><a href="guides.html">Guides</a></li>
+    <li><a href="faq.html">FAQ</a></li>
+    <li><a href="support.html">Support</a></li>
+   </ul></div>
+   <div><h4>Company</h4><ul>
+    <li><a href="about.html">About Us</a></li>
+    <li><a href="distributors.html">Distributors / OEM</a></li>
+    <li><a href="quote.html">Request a Quote</a></li>
+    <li><a href="contact.html">Contact</a></li>
+   </ul></div>
+  </div>
+  <div class="footer-bottom">
+   <div>© 2026 AVS Display Sdn Bhd (AVS Display Malaysia). All rights reserved.</div>
+   <div>CE · RoHS · FCC certified · www.avs.my</div>
+  </div>
+ </div>
+</footer>
+<script src="js/main.js"></script>
+</body>
+</html>
