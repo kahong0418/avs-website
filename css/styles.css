@@ -316,3 +316,8 @@ p{margin:0 0 1rem}
 /* v2 First Amendment: Products overview cards — show full composite images, no crop */
 .products-full .card .ph{aspect-ratio:auto;background:#fff}
 .products-full .card .ph img{height:auto;object-fit:contain}
+
+/* A12 (2026-09-30): Yana's review item 1: justify body text in cards, feature blocks and split sections */
+.feature p,.feature li,.card p,.card li,.split p,.split li,.checklist li{text-align:justify;text-justify:inter-word;-webkit-hyphens:auto;hyphens:auto}
+/* short bullet lines in 3/4-column cards stay left-aligned: justifying 4-word lines opens wide gaps */
+.grid-3 .checklist li,.grid-4 .checklist li{text-align:left}
