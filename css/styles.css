@@ -324,3 +324,14 @@ p{margin:0 0 1rem}
 /* A12: outline buttons on dark (navy) backgrounds were navy-on-navy and unreadable */
 .cta-band .btn-outline,.hero .btn-outline,.page-hero .btn-outline,.section.navy .btn-outline,.site-footer .btn-outline{color:#fff;border-color:rgba(255,255,255,.7)}
 .cta-band .btn-outline:hover,.hero .btn-outline:hover,.page-hero .btn-outline:hover,.section.navy .btn-outline:hover,.site-footer .btn-outline:hover{background:#fff;color:var(--navy);border-color:#fff}
+/* A12 audit fixes (2026-09-30) */
+/* spec sheet note: normal callout, not the dashed "pending" box */
+.spec-note{border:1px solid var(--line);border-left:4px solid var(--orange);border-radius:12px;background:#fff;padding:16px 18px;margin:10px 0;font-size:.95rem}
+/* card crops: keep the price display in frame */
+img[src$="project-petronas.jpg"],img[src$="project-vivo.jpg"],img[src$="project-bhp.jpg"]{object-position:left center}
+img[src$="hero-forecourt.jpg"]{object-position:right center}
+/* wide tables scroll sideways on phones instead of overflowing */
+@media(max-width:768px){.dtable{display:block;overflow-x:auto;-webkit-overflow-scrolling:touch}}
+/* floating WhatsApp button, phones only (header buttons are hidden there) */
+.wa-float{display:none}
+@media(max-width:768px){.wa-float{display:flex;align-items:center;gap:6px;position:fixed;right:16px;bottom:16px;z-index:80;background:#25D366;color:#fff;font-family:var(--fd);font-weight:600;font-size:.95rem;padding:12px 18px;border-radius:999px;box-shadow:0 6px 18px rgba(0,0,0,.25);text-decoration:none}}
