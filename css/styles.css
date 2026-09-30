@@ -335,3 +335,7 @@ img[src$="hero-forecourt.jpg"]{object-position:right center}
 /* floating WhatsApp button, phones only (header buttons are hidden there) */
 .wa-float{display:none}
 @media(max-width:768px){.wa-float{display:flex;align-items:center;gap:6px;position:fixed;right:16px;bottom:16px;z-index:80;background:#25D366;color:#fff;font-family:var(--fd);font-weight:600;font-size:.95rem;padding:12px 18px;border-radius:999px;box-shadow:0 6px 18px rgba(0,0,0,.25);text-decoration:none}}
+/* phones: long buttons wrap instead of pushing the page wider than the screen */
+@media(max-width:768px){.btn{white-space:normal;max-width:100%;justify-content:center;text-align:center}}
+/* phones: stat numbers like "20 stations" no longer push past the screen edge */
+@media(max-width:768px){.stats>*{min-width:0}.stat b{font-size:1.8rem;overflow-wrap:anywhere}}
