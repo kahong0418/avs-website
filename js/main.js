@@ -68,6 +68,7 @@
           if (note) { note.hidden = false; }
           f.querySelectorAll('input,textarea,select').forEach(function (el) { el.disabled = true; });
           if (btn) { btn.textContent = 'Sent ✓'; }
+          if (window.avsTrack) { window.avsTrack('generate_lead', {form_page: location.pathname}); }
         } else {
           return res.json().then(function (d) {
             var m = (d && d.errors && d.errors.length)
