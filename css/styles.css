@@ -339,3 +339,4 @@ img[src$="hero-forecourt.jpg"]{object-position:right center}
 @media(max-width:768px){.btn{white-space:normal;max-width:100%;justify-content:center;text-align:center}}
 /* phones: stat numbers like "20 stations" no longer push past the screen edge */
 @media(max-width:768px){.stats>*{min-width:0}.stat b{font-size:1.8rem;overflow-wrap:anywhere}}
+.form-note[hidden]{display:none}
