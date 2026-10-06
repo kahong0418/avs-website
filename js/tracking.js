@@ -1,4 +1,4 @@
-var GA_ID = 'G-XXXXXXXXXX';
+var GA_ID = 'G-66R56Y37MQ';
 /*
  * AVS site GA4 tracking. Line 1 above is the single source of the GA4 Measurement ID.
  * While line 1 still holds the placeholder (or any value not starting with G-), this file
