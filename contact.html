@@ -167,10 +167,11 @@
     <div class="section-head left">
      <span class="kicker">Prefer email</span>
      <h3 style="margin-top:0;">Or send a message</h3>
-     <p class="section-sub">WhatsApp is fastest. This form opens your email client and sends to <a href="mailto:info@avs.my">info@avs.my</a> instead.</p>
+     <p class="section-sub">WhatsApp is fastest. You can also email <a href="mailto:info@avs.my">info@avs.my</a> directly.</p>
     </div>
     <form class="form" action="https://formspree.io/f/YOUR_FORMSPREE_ID" method="POST" data-formspree>
      <input type="text" name="_gotcha" tabindex="-1" autocomplete="off" aria-hidden="true" style="position:absolute;left:-9999px">
+     <input type="hidden" name="_subject" value="New message from the avs.my contact page">
      <div class="field">
       <label for="name">Name <span aria-hidden="true">*</span></label>
       <input type="text" id="name" name="name" autocomplete="name" required>
@@ -195,6 +196,7 @@
      </div>
      <p class="form-error" role="alert" hidden></p>
      <button type="submit" class="btn btn-primary btn-block">Send Message</button>
+     <p class="form-note" hidden>Thanks, your message has been received. An AVS engineer will reply within one business day.</p>
     </form>
    </div>
   </div>
