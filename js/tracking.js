@@ -35,15 +35,20 @@ var GA_ID = 'G-66R56Y37MQ';
     try { gtag('event', name, params || {}); } catch (e) {}
   };
 
-  // One delegated listener: any click on (or inside) a link to wa.me
+  // One delegated listener: any click on (or inside) a link to wa.me, mailto: or tel:
   document.addEventListener('click', function (ev) {
     try {
       var el = ev.target;
       while (el && el !== document) {
         if (el.nodeType === 1 && String(el.tagName).toLowerCase() === 'a') {
           var href = el.getAttribute('href') || '';
+          var params = { link_url: href, page_path: location.pathname };
           if (href.indexOf('wa.me/') !== -1) {
-            window.avsTrack('whatsapp_click', { link_url: href, page_path: location.pathname });
+            window.avsTrack('whatsapp_click', params);
+          } else if (href.indexOf('mailto:') === 0) {
+            window.avsTrack('email_click', params);
+          } else if (href.indexOf('tel:') === 0) {
+            window.avsTrack('phone_click', params);
           }
           return;
         }
