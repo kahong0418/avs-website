@@ -43,7 +43,11 @@ var GA_ID = 'G-66R56Y37MQ';
         if (el.nodeType === 1 && String(el.tagName).toLowerCase() === 'a') {
           var href = el.getAttribute('href') || '';
           var params = { link_url: href, page_path: location.pathname };
-          if (href.indexOf('wa.me/') !== -1) {
+          if (href.indexOf('zaloapp.com/') !== -1 || href.indexOf('zalo.me/') !== -1) {
+            window.avsTrack('zalo_click', { channel: 'zalo', page_path: location.pathname });
+          } else if (href.indexOf('line.me/') !== -1) {
+            window.avsTrack('line_click', { channel: 'line', page_path: location.pathname });
+          } else if (href.indexOf('wa.me/') !== -1) {
             window.avsTrack('whatsapp_click', params);
           } else if (href.indexOf('mailto:') === 0) {
             window.avsTrack('email_click', params);
