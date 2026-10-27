@@ -1,4 +1,4 @@
-var META_PIXEL_ID = 'PIXEL_ID_PENDING';
+var META_PIXEL_ID = '4492923820974532';
 /*
  * AVS Meta Pixel, loaded only on pages that receive paid Meta traffic (Vietnamese PCU landing page).
  * Line 1 above is the single source of the Pixel ID. While it is not all digits, this file does nothing.
