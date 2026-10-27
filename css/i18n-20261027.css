@@ -1,0 +1,23 @@
+/* AVS bilingual navigation and Vietnamese text layout. */
+.language-switch{display:flex;align-items:center;gap:2px;padding:3px;border:1px solid #d6dee7;border-radius:8px;flex-shrink:0;font:600 12px/1.3 var(--ff, sans-serif)}
+.language-switch a{padding:7px 6px;border-radius:5px;color:#0a2540;text-decoration:none}
+.language-switch a[aria-current]{background:#0a2540;color:#fff}
+.language-switch a:focus-visible{outline:3px solid #ff7b23;outline-offset:2px}
+html[lang=vi] .btn{white-space:normal;text-align:center}
+html[lang=vi] .nav-menu>li>a{font-size:.83rem;padding-left:9px;padding-right:9px}
+html[lang=vi] .nav-right{gap:8px}
+html[lang=vi] .nav-right>.btn{padding:11px 12px;font-size:.8rem}
+html[lang=vi] h1,html[lang=vi] h2,html[lang=vi] h3{line-height:1.3}
+html[lang=vi] .dropdown{min-width:290px}
+.document-language{display:block;font-size:.75rem;font-weight:400;line-height:1.4;margin-top:4px;opacity:.85}
+.vi-email-float{display:none}
+@media(min-width:769px) and (max-width:1199px){.nav-right>.btn{display:none}}
+@media(max-width:768px){
+.language-switch a{padding:7px 5px}
+html[lang=vi] .nav-menu>li>a{font-size:1rem}
+html[lang=vi] .dropdown{min-width:0}
+.vi-email-float{display:flex;position:fixed;right:16px;bottom:16px;z-index:80;background:#0a2540;color:white;padding:12px 18px;border-radius:99px;box-shadow:0 6px 18px #0004;text-decoration:none;font-weight:600}
+html[lang=vi] .hero-badges{flex-wrap:wrap}
+html[lang=vi] .footer-bottom{padding-bottom:75px}
+}
+@media(max-width:380px){.brand .bn{font-size:.85rem}.language-switch{font-size:11px}.nav-right{gap:6px}}

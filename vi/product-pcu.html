@@ -1,0 +1,542 @@
+<!DOCTYPE html>
+
+<html lang="vi">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1" name="viewport"/>
+<title>bộ hiển thị giá xăng dầu (PCU) - Hệ thống hiển thị giá nhiên liệu ngoài trời</title>
+<meta content="Bộ hiển thị giá xăng dầu LED mô-đun AVS dành cho trạm xăng: tầm nhìn rõ ràng, cấu trúc ngoài trời kín, ba phương pháp cập nhật giá và tích hợp POS/trạm xăng." name="description"/>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;family=Sora:wght@600;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="/assets/favicon.ico" rel="icon" sizes="any"/>
+<link href="/assets/favicon-32x32.png" rel="icon" sizes="32x32" type="image/png"/>
+<link href="/assets/favicon-16x16.png" rel="icon" sizes="16x16" type="image/png"/>
+<link href="/assets/apple-touch-icon.png" rel="apple-touch-icon"/>
+<meta content="#0a2540" name="theme-color"/>
+<link href="/css/styles.css?v=20261006a" rel="stylesheet"/>
+<meta content="website" property="og:type"/>
+<meta content="AVS Display Sdn Bhd" property="og:site_name"/>
+<meta content="bộ hiển thị giá xăng dầu (PCU) - Hệ thống hiển thị giá nhiên liệu ngoài trời" property="og:title"/>
+<meta content="Bộ hiển thị giá xăng dầu LED mô-đun AVS dành cho trạm xăng: tầm nhìn rõ ràng, cấu trúc ngoài trời kín, ba phương pháp cập nhật giá và tích hợp POS/trạm xăng." property="og:description"/>
+<meta content="https://avs.my/vi/product-pcu.html" property="og:url"/>
+<meta content="https://avs.my/assets/og-image.png" property="og:image"/>
+<meta content="1200" property="og:image:width"/>
+<meta content="630" property="og:image:height"/>
+<meta content="summary_large_image" name="twitter:card"/>
+<meta content="bộ hiển thị giá xăng dầu (PCU) - Hệ thống hiển thị giá nhiên liệu ngoài trời" name="twitter:title"/>
+<meta content="Bộ hiển thị giá xăng dầu LED mô-đun AVS dành cho trạm xăng: tầm nhìn rõ ràng, cấu trúc ngoài trời kín, ba phương pháp cập nhật giá và tích hợp POS/trạm xăng." name="twitter:description"/>
+<meta content="https://avs.my/assets/og-image.png" name="twitter:image"/>
+<script src="/js/tracking.js?v=20261006b"></script>
+<link href="https://avs.my/vi/product-pcu.html" rel="canonical"/><link href="https://avs.my/product-pcu.html" hreflang="en" rel="alternate"/><link href="https://avs.my/vi/product-pcu.html" hreflang="vi" rel="alternate"/><link href="https://avs.my/product-pcu.html" hreflang="x-default" rel="alternate"/><meta content="vi_VN" property="og:locale"/><link href="/css/i18n-20261027.css" rel="stylesheet"/></head>
+<body>
+<header class="site-header">
+<div class="container nav">
+<a class="brand" href="/vi/index.html">
+<img alt="AVS Display Sdn Bhd" class="brand-logo" src="/assets/avs-logo.png"/>
+<span><span class="bn">AVS Display</span></span>
+</a>
+<ul class="nav-menu">
+<li class="has-dd active"><a href="/vi/products.html">Sản phẩm <i class="caret"></i></a>
+<ul class="dropdown">
+<li><a href="/vi/products.html"><b>Tất cả sản phẩm</b><span>Tổng quan các dòng sản phẩm AVS</span></a></li>
+<li><a href="/vi/product-pcu.html"><b>Bộ hiển thị giá xăng dầu (PCU)</b><span>Trọn bộ: bảng hiển thị, bộ điều khiển và điều khiển từ xa</span></a></li>
+<li><a href="/vi/product-led-tubes.html"><b>Ống LED</b><span>ATHH Green và ColorLine</span></a></li>
+<li><a href="/vi/product-colorline.html"><b>  · Ống ColorLine</b><span>Chiếu sáng trang trí nhận diện thương hiệu</span></a></li>
+<li><a href="/vi/product-athh.html"><b>  · Ống ATHH Green</b><span>Chiếu sáng viền mái che độ sáng cao</span></a></li>
+<li><a href="/vi/product-led-modules.html"><b>Mô-đun LED</b><span>Hyperlite độ sáng cao</span></a></li>
+<li><a href="/vi/product-lens-strip.html"><b>Thanh LED thấu kính</b><span>Thanh LED Osram góc chiếu rộng</span></a></li>
+<li><a href="/vi/product-edge-lighting.html"><b>Thanh LED chiếu sáng viền</b><span>Chiếu sáng màu cho viền và mặt diềm</span></a></li>
+<li><a href="/vi/integrations.html"><b>Tích hợp POS / IFSF</b><span>Kết nối bộ điều khiển trạm xăng</span></a></li>
+</ul></li>
+<li class="has-dd"><a href="/vi/solutions.html">Giải pháp <i class="caret"></i></a>
+<ul class="dropdown">
+<li><a href="/vi/solutions.html"><b>Tất cả giải pháp</b><span>Theo ngành và ứng dụng</span></a></li>
+<li><a href="/vi/solutions-petrol-stations.html"><b>Trạm xăng</b><span>Hiển thị giá và chiếu sáng trạm xăng</span></a></li>
+</ul></li>
+<li class="has-dd"><a href="/vi/resources.html">Tài liệu <i class="caret"></i></a>
+<ul class="dropdown">
+<li><a href="/vi/case-studies.html"><b>Dự án thực tế</b><span>Petronas, Shell, Vivo và các thương hiệu khác</span></a></li>
+<li><a href="/vi/certifications.html"><b>Chứng nhận</b><span>CE, RoHS, FCC, IP65</span></a></li>
+<li><a href="/vi/guides.html"><b>Hướng dẫn lắp đặt</b><span>Thông số và hướng dẫn</span></a></li>
+<li><a href="/vi/faq.html"><b>Câu hỏi thường gặp</b><span>Những câu hỏi thường gặp</span></a></li>
+<li><a href="/vi/blog.html"><b>Bài viết</b><span>Tin tức và kiến thức</span></a></li>
+<li><a href="/vi/support.html"><b>Hỗ trợ</b><span>Dịch vụ và bảo hành</span></a></li>
+</ul></li>
+<li class="has-dd"><a href="/vi/about.html">Công ty <i class="caret"></i></a>
+<ul class="dropdown">
+<li><a href="/vi/about.html"><b>Về AVS</b><span>Giới thiệu công ty</span></a></li>
+<li><a href="/vi/distributors.html"><b>Nhà phân phối / OEM</b><span>Hợp tác với AVS</span></a></li>
+<li><a href="/vi/contact.html"><b>Liên hệ</b><span>Kết nối với chúng tôi</span></a></li>
+</ul></li>
+</ul>
+<div class="nav-right"><nav aria-label="Ngôn ngữ" class="language-switch"><a aria-label="English" href="/product-pcu.html" hreflang="en" lang="en">EN</a><a aria-current="page" aria-label="Tiếng Việt" href="/vi/product-pcu.html" hreflang="vi" lang="vi">VI</a></nav>
+<a class="btn btn-primary" href="mailto:info@avs.my">Gửi email</a>
+<a class="btn btn-outline" href="/vi/quote.html">Yêu cầu báo giá</a>
+<button aria-expanded="false" aria-label="Mở trình đơn" class="nav-toggle"><span></span><span></span><span></span></button>
+</div>
+</div>
+</header>
+<main>
+<section class="page-hero">
+<div class="container">
+<div class="breadcrumb"><a href="/vi/index.html">Trang chủ</a><span>/</span><a href="/vi/products.html">Sản phẩm</a><span>/</span>bộ hiển thị giá xăng dầu (PCU)</div>
+<h1>bộ hiển thị giá xăng dầu (PCU)</h1>
+<p style="color:#fff;font-family:var(--fd);font-weight:600;font-size:1.2rem;margin-bottom:12px">Hệ thống hiển thị giá ngoài trời đáng tin cậy cho bảng hiệu trạm xăng</p>
+<p>Bộ hiển thị giá xăng dầu LED dạng mô-đun (PCU) được thiết kế cho trạm xăng, giúp hiển thị rõ ràng, hoạt động ổn định và dễ bảo trì. Thiết bị chịu được môi trường ngoài trời khắc nghiệt và sẵn sàng tích hợp chức năng cập nhật giá từ xa.</p>
+</div>
+</section>
+<nav class="prod-secnav"><div class="container">
+<a href="#hero-note">Điểm nổi bật</a>
+<a href="#intro">Giới thiệu</a>
+<a href="#benefits">Lợi ích</a>
+<a href="#system">Tổng quan về hệ thống</a>
+<a href="#spec">Thông số kỹ thuật</a>
+<a href="#methods">Phương pháp cập nhật giá</a>
+<a href="#construction">Cấu tạo</a>
+</div></nav>
+<!-- S1 · HERO / HIGHLIGHTS -->
+<section class="section" id="hero-note" style="scroll-margin-top:120px">
+<div class="container">
+<div class="split">
+<div>
+<div class="hero-cta" style="margin-bottom:26px">
+<a class="btn btn-primary btn-lg" href="mailto:info@avs.my"><svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92z"></path></svg> Gửi email — phản hồi trong ngày</a>
+<a class="btn btn-dark btn-lg" href="/vi/quote.html"><svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline><line x1="8" x2="16" y1="13" y2="13"></line><line x1="8" x2="13" y1="17" y2="17"></line></svg> Nhận báo giá nhanh</a>
+<a class="btn btn-outline btn-lg" href="/vi/case-studies.html"><svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24"><path d="M2 12s3.5-7 10-7 10 7 10 7-3.5 7-10 7S2 12 2 12z"></path><circle cx="12" cy="12" r="3"></circle></svg> Xem dự án</a>
+</div>
+<ul class="checklist">
+<li>Kết cấu kín theo cấp IP và đầu nối chịu thời tiết</li>
+<li>100% được kiểm tra trước khi giao hàng</li>
+<li>Tích hợp cập nhật giá từ xa đã sẵn sàng</li>
+<li>Có sẵn tài liệu tuân thủ (IFSF / IEC / IP / EMC / RoHS)</li>
+<li>Việc lắp đặt đã được chứng minh với các thương hiệu xăng dầu lớn thông qua các đối tác trong ngành</li>
+</ul>
+</div>
+<div class="media-frame" style="aspect-ratio:16/11"><img alt="bộ hiển thị giá xăng dầu AVS hiển thị 2.289 bằng chữ số cực đỏ — ảnh chụp sản phẩm sạch trên nền trắng" src="/assets/shots/IMG-PCU-33-y.jpg"/></div>
+</div>
+<div class="grid grid-4" style="margin-top:32px">
+<div class="media-frame"><img alt="Cột giá BHP vào ban đêm với mỗi loại nhiên liệu được thắp sáng bằng chữ số LED" loading="lazy" src="/assets/shots/IMG-PCU-01.jpg"/></div>
+<div class="media-frame"><img alt="Các bộ bảng giá Shell sáng đèn trong quá trình thử nghiệm tại nhà máy AVS — bảng Fuel Save và V Power với chữ số LED màu đỏ" loading="lazy" src="/assets/shots/IMG-PCU-35.jpg"/></div>
+<div class="media-frame"><img alt="trụ bảng giá xăng dầu của Petronas vào lúc hoàng hôn với mọi giá nhiên liệu đều sáng màu đỏ - 97, 95, Diesel Euro 5 và Diesel" loading="lazy" src="/assets/shots/IMG-PCU-36.jpg"/></div>
+<div class="media-frame"><img alt="Tháp BHP Petromart với các chữ số giá LED trắng — 97, 95, B10 và B7 ở định dạng 4 chữ số để nhìn rõ ánh sáng ban ngày" loading="lazy" src="/assets/shots/IMG-PCU-37B.jpg"/></div>
+</div>
+</div>
+</section>
+<!-- S2 · INTRODUCTION -->
+<section class="section alt" id="intro" style="scroll-margin-top:120px">
+<div class="container">
+<div class="split">
+<div>
+<span class="kicker">Giới thiệu</span>
+<h2>Tổng quan về giải pháp PCU</h2>
+<p>AVS PCU là giải pháp bảng LED hiển thị giá xăng dầu hoàn chỉnh, dễ đọc, hoạt động bền bỉ ngoài trời và dễ bảo trì tại chỗ. Thiết bị thường được lắp trên trụ và biển hiệu để hiển thị giá nhiên liệu rõ ràng cả ngày lẫn đêm.</p>
+<p>AVS PCU có sẵn với nhiều kiểu dáng và kích cỡ, cho phép người tạo bảng hiệu và chủ sở hữu địa điểm điều chỉnh chiều cao, màu sắc và cấu hình chữ số phù hợp cho từng trạm.</p>
+</div>
+<div style="display:grid;gap:18px">
+<div class="media-frame">
+<img alt="Các mô-đun bộ hiển thị giá xăng dầu AVS sáng màu đỏ trên giá sản xuất, với cận cảnh chữ số và bộ điều khiển" src="/assets/product-pcu.jpg" style="width:100%;height:auto;display:block;object-fit:contain"/>
+</div>
+<div class="media-frame"><img alt="Hiển thị giá nhiên liệu ở độ sáng tối đa — 97 ở 3,65, 95 ở 2,65 và Diesel B10 ở 3,10 bằng các chữ số LED màu đỏ bên cạnh bảng phân loại có đèn nền" loading="lazy" src="/assets/shots/IMG-PM-01-price-board.jpg"/></div>
+<div class="media-frame"><img alt="Toàn bộ tháp Petronas vào lúc hoàng hôn hiển thị màn hình hiển thị giá nhiên liệu của PCU" loading="lazy" src="/assets/shots/IMG-PCU-03.jpg"/></div>
+</div>
+</div>
+</div>
+</section>
+<!-- S3 · BENEFITS -->
+<section class="section" id="benefits" style="scroll-margin-top:120px">
+<div class="container">
+<div class="section-head">
+<span class="kicker">Vì sao chọn PCU của AVS</span>
+<h2>Lợi ích</h2>
+</div>
+<div class="grid grid-2">
+<div class="feature">
+<h3>Kết cấu kín bảo vệ thiết bị ngoài trời</h3>
+<p style="margin-bottom:16px">Cấu trúc kín với lớp phủ bảo vệ và đầu nối cấp bảo vệ IP để chịu được mưa, nhiệt, độ ẩm và hoạt động liên tục.</p>
+<div class="media-frame"><img alt="Các đầu nối được cấp bảo vệ IP kín được nối trên cáp PCU" loading="lazy" src="/assets/shots/IMG-PCU-04-y.jpg"/></div>
+</div>
+<div class="feature">
+<h3>Vỏ nhôm (Chống ăn mòn)</h3>
+<p style="margin-bottom:16px">Vỏ nhôm giúp chống ăn mòn và hỗ trợ tuổi thọ lâu dài ở môi trường ngoài trời.</p>
+<div class="media-frame"><img alt="Hộp điều khiển AVS PCU trong vỏ nhôm có đầu nối cáp đạt tiêu chuẩn IP" loading="lazy" src="/assets/shots/IMG-PCU-05-y.jpg"/></div>
+</div>
+<div class="feature">
+<h3>Độ sáng tự động (Cảm biến ánh sáng trên mỗi mô-đun)</h3>
+<p style="margin-bottom:16px">Mỗi mô-đun LED bao gồm một cảm biến ánh sáng để tự động điều chỉnh độ sáng dựa trên điều kiện thực tế của môi trường xung quanh. Điều này duy trì khả năng đọc và tránh hiện tượng quá sáng — ngay cả khi thời tiết thay đổi đột ngột (ví dụ: mưa lớn khiến bầu trời tối đen).</p>
+<div class="media-frame"><img alt="Phân đoạn chữ số PCU sáng với cảm biến ánh sáng tích hợp điều khiển độ sáng tự động" loading="lazy" src="/assets/shots/IMG-PCU-06.jpg"/></div>
+</div>
+<div class="feature">
+<h3>Điều khiển tự động đèn nền trụ bảng giá (Không cần bộ hẹn giờ bên ngoài)</h3>
+<p style="margin-bottom:16px">Hệ thống PCU có thể điều khiển đèn nền trụ bảng giá xăng dầu để tự động BẬT/TẮT dựa trên điều kiện ngày/đêm. Điều này giúp tiết kiệm chi phí và độ phức tạp của bộ hẹn giờ bên ngoài và đảm bảo hoạt động chính xác hơn khi điều kiện ánh sáng thay đổi bất ngờ.</p>
+<div class="media-frame"><img alt="Đèn nền hộp đèn trụ bảng giá thắp sáng vào ban đêm — Bảng điều khiển Petronas Primax được chuyển đổi bởi bộ điều khiển PCU" loading="lazy" src="/assets/shots/IMG-PCU-07.jpg"/></div>
+</div>
+<div class="feature">
+<h3>Thiết kế mô-đun cho dịch vụ nhanh hơn</h3>
+<p style="margin-bottom:16px">Thiết kế mô-đun hỗ trợ thay thế nhanh hơn và bảo trì tại chỗ dễ dàng hơn, giảm thời gian ngừng hoạt động và gián đoạn bảo trì.</p>
+<div class="media-frame"><img alt="Bảng chữ số PCU mô-đun, không sáng, hiển thị các vị trí đèn LED riêng lẻ" loading="lazy" src="/assets/shots/IMG-PCU-08.jpg"/></div>
+</div>
+<div class="feature">
+<h3>Sẵn sàng tích hợp cập nhật giá từ xa</h3>
+<p style="margin-bottom:16px">Thiết kế sẵn sàng tích hợp hỗ trợ quy trình cập nhật giá từ xa thông qua môi trường bộ điều khiển/POS chung (tùy theo yêu cầu của dự án).</p>
+<div class="media-frame"><img alt="Bộ điều khiển PCU lắp đặt trong tủ điều khiển trạm xăng, có dây để cập nhật giá từ hệ thống trạm xăng" loading="lazy" src="/assets/shots/IMG-INT-01.jpg"/></div>
+</div>
+<div class="feature">
+<h3>Chất lượng linh kiện</h3>
+<p style="margin-bottom:16px">Các thành phần được kiểm soát chất lượng với các tùy chọn đèn LED có thương hiệu có sẵn (ví dụ: Osram/Cree tùy thuộc vào kiểu máy/dự án).</p>
+<div class="media-frame"><img alt="Cận cảnh đèn LED chữ số PCU màu trắng sáng" loading="lazy" src="/assets/shots/IMG-PCU-10.jpg"/></div>
+</div>
+</div>
+</div>
+</section>
+<!-- S4 · PCU SYSTEM OVERVIEW -->
+<section class="section alt" id="system" style="scroll-margin-top:120px">
+<div class="container">
+<div class="section-head">
+<span class="kicker">Tổng quan về hệ thống PCU</span>
+<h2>Tổng quan về hệ thống</h2>
+</div>
+<div class="split">
+<div>
+<h3>Hệ thống PCU làm gì</h3>
+<p>AVS PCU là hệ thống bảng LED hiển thị giá hoàn chỉnh dành cho trạm xăng.</p>
+<p>Giá mới được nhập qua một trong ba cách: điều khiển từ xa, thiết bị nhập giá tại quầy hoặc hệ thống POS/bộ điều khiển trạm xăng. Dữ liệu được gửi đến bộ điều khiển PCU để cập nhật các mô-đun LED trên trụ bảng giá.</p>
+<p>Hệ thống còn hỗ trợ thêm các chức năng tự động:</p>
+<ol style="padding-left:22px;color:var(--slate)">
+<li>Điều khiển độ sáng tự động thông qua cảm biến ánh sáng trên mỗi mô-đun</li>
+<li>Điều khiển BẬT/TẮT đèn nền cột giá nhiên liệu tự động thông qua bộ điều khiển PCU (cấu hình dựa trên dự án)</li>
+</ol>
+</div>
+<div class="media-frame"><img alt="Tổng quan về hệ thống PCU: mô-đun hiển thị giá được kết nối với hộp điều khiển, được vận hành bằng điều khiển từ xa cầm tay hoặc thiết bị đầu cuối giá" loading="lazy" src="/assets/shots/IMG-PCU-11-y.jpg"/></div>
+</div>
+<h3 style="margin:52px 0 22px">Thành phần cốt lõi</h3>
+<div class="grid grid-3">
+<div class="feature">
+<h3>Bộ điều khiển PCU (Bộ điều khiển chính)</h3>
+<ul class="checklist" style="margin-bottom:16px">
+<li>Nhận dữ liệu giá từ phương thức nhập đã chọn</li>
+<li>Điều khiển tất cả các mô-đun hiển thị giá LED được kết nối</li>
+<li>Gửi/nhận tín hiệu điều khiển độ sáng</li>
+<li>Có thể điều khiển BẬT/TẮT đèn nền cột giá nhiên liệu (tùy thuộc vào hệ thống dây điện của dự án)</li>
+</ul>
+<div class="media-frame"><img alt="Hộp điều khiển AVS PCU đã tháo nắp, hiển thị bảng điều khiển, công tắc tơ và nguồn điện" loading="lazy" src="/assets/shots/IMG-PCU-12-y.jpg"/></div>
+<a class="more" href="/vi/product-controllers.html" style="display:inline-block;margin-top:12px;font-family:var(--fd);font-weight:600;color:var(--orange-2)">Thông số bộ điều khiển và thiết bị nhập giá →</a>
+</div>
+<div class="feature">
+<h3>Mô-đun hiển thị giá LED (Mô-đun chữ số)</h3>
+<ul class="checklist">
+<li>Gắn trên cột biển báo giá xăng/giá nhiên liệu</li>
+<li>Có sẵn ở các độ cao và màu sắc chữ số khác nhau</li>
+<li>Vỏ nhôm để giảm thiểu sự ăn mòn</li>
+<li>Bịt kín để sử dụng ngoài trời</li>
+<li>Mỗi mô-đun bao gồm một cảm biến ánh sáng</li>
+</ul>
+</div>
+<div class="feature">
+<h3>Cáp &amp; Đầu nối định mức IP</h3>
+<ul class="checklist" style="margin-bottom:16px">
+<li>Cáp ngoài trời giữa bộ điều khiển và mô-đun</li>
+<li>Đầu nối được cấp bảo vệ IP để xử lý mưa và độ ẩm</li>
+<li>Kết nối kiểu cắm và rút phích cắm để cài đặt và bảo trì dễ dàng hơn</li>
+</ul>
+<div class="media-frame"><img alt="Cáp ngoài trời AVS dài 3 mét có đầu nối cắm và rút cấp bảo vệ IP" loading="lazy" src="/assets/shots/IMG-PCU-13-y.jpg"/></div>
+</div>
+</div>
+<h3 style="margin:52px 0 22px">Ba phương thức nhập liệu</h3>
+<div class="grid grid-3">
+<div class="feature">
+<h3>Điều khiển từ xa</h3>
+<ul class="checklist" style="margin-bottom:16px">
+<li>Remote cầm tay dùng để cập nhật giá trực tiếp</li>
+<li>Thích hợp cho các địa điểm đơn giản hoặc nhỏ hơn không cần tích hợp POS</li>
+</ul>
+<div class="media-frame" style="aspect-ratio:4/5"><img alt="Điều khiển từ xa không dây Kiểm soát thay đổi giá AVS" loading="lazy" src="/assets/shots/remote-upright-y.jpg"/></div>
+</div>
+<div class="feature">
+<h3>Thiết bị nhập giá tại quầy</h3>
+<ul class="checklist" style="margin-bottom:16px">
+<li>Thiết bị đầu cuối nhỏ đặt tại quầy thu ngân hoặc phòng điều khiển</li>
+<li>Nhân viên có thể nhập giá mới từ bên trong cửa hàng</li>
+<li>Có thể được cấu hình để liên kết với hệ thống POS/trạm xăng của bên thứ 3 (dựa trên dự án)</li>
+</ul>
+<div class="media-frame" style="aspect-ratio:4/5"><img alt="Thiết bị đầu cuối đếm giá AVS với bàn phím, màn hình và ăng-ten" loading="lazy" src="/assets/shots/IMG-PCU-15-y.jpg"/></div>
+</div>
+<div class="feature">
+<h3>Hệ thống POS/trạm xăng dầu</h3>
+<ul class="checklist" style="margin-bottom:16px">
+<li>Giá được gửi từ POS hoặc bộ điều khiển trạm xăng của trạm</li>
+<li>PCU nhận lệnh giá thông qua giao diện dự án đã thống nhất</li>
+<li>Thích hợp cho các mạng hoặc trạm có thương hiệu có quyền kiểm soát giá trung tâm</li>
+</ul>
+<div class="media-frame" style="aspect-ratio:4/5"><img alt="Thiết lập POS/trạm xăng tại quầy — Bảng điều khiển ProGauge và thiết bị đầu cuối giá AVS được liên kết với hệ thống trạm" loading="lazy" src="/assets/shots/IMG-PCU-16.jpg" style="width:100%;height:100%;object-fit:cover"/></div>
+</div>
+</div>
+<h3 style="margin:52px 0 22px">Tính năng điều khiển bổ sung</h3>
+<div class="grid grid-2">
+<div class="feature">
+<h3>Kiểm soát độ sáng tự động</h3>
+<ul class="checklist" style="margin-bottom:16px">
+<li>Mỗi mô-đun chữ số có cảm biến ánh sáng riêng</li>
+<li>Hệ thống điều chỉnh độ sáng dựa trên điều kiện môi trường thực tế</li>
+<li>Giữ cho các chữ số có thể đọc được và tránh độ sáng quá mức, ngay cả khi bầu trời đột ngột tối (ví dụ: mưa lớn)</li>
+</ul>
+<div class="media-frame"><img alt="Phân đoạn chữ số PCU sáng với cảm biến ánh sáng tích hợp điều khiển độ sáng tự động" loading="lazy" src="/assets/shots/IMG-PCU-06.jpg"/></div>
+</div>
+<div class="feature">
+<h3>Điều khiển đèn nền trụ bảng giá tự động</h3>
+<ul class="checklist" style="margin-bottom:16px">
+<li>Bộ điều khiển PCU có thể tự động BẬT/TẮT đèn nền trụ bảng giá xăng dầu</li>
+<li>Phản ứng với điều kiện ánh sáng thực tế, không chỉ là bộ hẹn giờ cố định</li>
+<li>Giúp tiết kiệm năng lượng và giảm nhu cầu sử dụng bộ hẹn giờ bên ngoài và điều chỉnh thủ công</li>
+</ul>
+<div class="media-frame"><img alt="Trạm Petronas vào ban đêm - các chữ số trên cột và hộp đèn thương hiệu đều sáng" loading="lazy" src="/assets/shots/IMG-PCU-18.jpg"/></div>
+</div>
+</div>
+<h3 style="margin:52px 0 14px">Bản vẽ hệ thống</h3>
+<p style="color:var(--muted);margin:0 0 14px">Bản vẽ toàn bộ hệ thống — màn hình PCU, bộ điều khiển và hộp đèn có dây cáp — cùng với các bản vẽ kích thước tổng thể của cụm lắp ráp trên nhiều chiều cao chữ số (chi tiết theo yêu cầu).</p>
+<a class="btn btn-outline" download="" href="/assets/downloads/AVS-PCU-System-Drawings.pdf"><svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24"><path d="M12 3v12"></path><path d="m7 10 5 5 5-5"></path><path d="M5 21h14"></path></svg>Tải bản vẽ hệ thống (PDF)<span class="document-language">Bản gốc tiếng Anh</span></a>
+<a class="btn btn-outline" download="" href="/assets/downloads/AVS-PCU-Digit-Dimension-Drawings.pdf" style="margin-left:8px"><svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24"><path d="M12 3v12"></path><path d="m7 10 5 5 5-5"></path><path d="M5 21h14"></path></svg>Tải bản vẽ kích thước chữ số (PDF)<span class="document-language">Bản gốc tiếng Anh</span></a>
+</div>
+</section>
+<!-- S5 · PCU SPECIFICATION -->
+<section class="section" id="spec" style="scroll-margin-top:120px">
+<div class="container">
+<div class="section-head">
+<span class="kicker">Dữ liệu kỹ thuật</span>
+<h2>Đặc điểm kỹ thuật PCU</h2>
+</div>
+<h3 style="margin:0 0 22px">Loại hiển thị</h3>
+<div class="grid grid-2">
+<div class="feature">
+<h3>PCU 7 đoạn tiêu chuẩn</h3>
+<p style="margin-bottom:16px">Chữ số 7 đoạn tiêu chuẩn để hiển thị giá nhiên liệu - được sử dụng rộng rãi cho hầu hết các trụ bảng giá xăng dầu. Thích hợp cho các bố cục điển hình như cấu hình 8.888, 8.8.8.8 và 5 chữ số (dựa trên dự án).</p>
+<div class="media-frame"><img alt="Bảng điều khiển PCU 7 đoạn tiêu chuẩn sáng màu trắng" loading="lazy" src="/assets/shots/IMG-PCU-19-y.jpg"/></div>
+</div>
+<div class="feature">
+<h3>PCU đa phân đoạn / định dạng tùy chỉnh</h3>
+<p style="margin-bottom:16px">Định dạng nhiều phân đoạn được sử dụng cho các bố cục đặc biệt, vị trí dấu chấm tùy chỉnh, kích thước chữ số hỗn hợp hoặc các yêu cầu dành riêng cho thương hiệu. Điều này phù hợp khi thiết kế bảng hiệu cần bố cục không chuẩn hoặc khoảng cách đặc biệt.</p>
+<div class="media-frame"><img alt="Cụm biển báo giá Shell đang được thử nghiệm tại nhà máy AVS" loading="lazy" src="/assets/shots/IMG-PCU-35.jpg"/></div>
+</div>
+</div>
+<div class="grid grid-2" style="margin-top:26px">
+<div class="feature">
+<h3>Phạm vi chiều cao chữ số và kích thước phổ biến</h3>
+<p>Chúng tôi hỗ trợ một loạt các chiều cao chữ số tùy thuộc vào yêu cầu của dự án. Các kích thước phổ biến bao gồm:</p>
+<p style="margin-bottom:16px"><strong>175 mm / 200 mm / 250 mm / 300 mm / 336 mm</strong> (và các quy mô khác dựa trên dự án).</p>
+<div class="media-frame"><img alt="Bảng chữ số PCU với nhiều kích cỡ trên kệ trưng bày" loading="lazy" src="/assets/shots/IMG-PCU-21.jpg"/></div>
+</div>
+<div class="feature">
+<h3>Bố cục chữ số</h3>
+<p>Bố cục hiển thị giá phổ biến bao gồm:</p>
+<ul class="checklist" style="margin-bottom:16px">
+<li>8.888 (4 chữ số có dấu thập phân)</li>
+<li>8.8.8.8 (4 chữ số có đầy đủ dấu chấm)</li>
+<li>Định dạng 5 chữ số (dựa trên dự án)</li>
+</ul>
+<div class="media-frame"><img alt="Bảng PCU bốn chữ số sáng màu xanh lục" loading="lazy" src="/assets/shots/IMG-PCU-22-clean.jpg"/></div>
+</div>
+</div>
+<h3 style="margin:52px 0 22px">Tùy chọn màu sắc</h3>
+<div class="split">
+<div>
+<p>Màu sắc có sẵn (tùy model/dự án): <strong>Đỏ / Trắng / Xanh / Hai màu (Đỏ + Trắng)</strong>.</p>
+<div class="media-frame"><img alt="Bảng chữ số PCU được chiếu sáng bằng các màu LED khác nhau trên tường phòng trưng bày" loading="lazy" src="/assets/shots/IMG-PCU-23.jpg"/></div>
+</div>
+<div>
+<div class="media-frame" style="aspect-ratio:16/10">
+<img alt="Chữ số giá LED trắng trên trạm Vivo vào ban đêm" src="/assets/project-vivo.jpg"/>
+</div>
+<p style="color:var(--muted);font-size:.88rem;margin:10px 0 0">Chữ số màu trắng trên bảng đã lắp tại trạm Vivo.</p>
+</div>
+</div>
+<div class="split" style="margin-top:52px">
+<div>
+<h3>Loại cung cấp - Đơn vị hoàn chỉnh so với Chỉ mô-đun</h3>
+<p>Chúng tôi có thể cung cấp PCU dưới dạng Đơn vị hoàn chỉnh (có tấm/vỏ phía sau) hoặc dưới dạng Chỉ mô-đun cho các cấu trúc bảng hiệu tùy chỉnh và trang bị thêm. Loại nguồn cung cấp cuối cùng phụ thuộc vào thiết kế địa điểm và ưu tiên của người lắp đặt.</p>
+</div>
+<div class="media-frame"><img alt="Đơn vị PCU hoàn chỉnh (trái) so với bảng chỉ có mô-đun (phải)" loading="lazy" src="/assets/shots/IMG-PCU-24.jpg"/></div>
+</div>
+<h3 style="margin:52px 0 14px">Bảng thông số kỹ thuật</h3>
+<div class="spec-note">
+   Mô hình/thông số kỹ thuật đầy đủ có sẵn theo yêu cầu qua Email.
+  </div>
+<a class="btn btn-outline" href="mailto:info@avs.my">Yêu cầu bảng thông số qua email</a>
+</div>
+</section>
+<!-- S6 · PRICE UPDATE METHOD -->
+<section class="section alt" id="methods" style="scroll-margin-top:120px">
+<div class="container">
+<div class="section-head">
+<span class="kicker">Phương pháp cập nhật giá</span>
+<h2>Ba cách để cập nhật giá nhiên liệu</h2>
+<p class="section-sub">AVS PCU hỗ trợ ba cách để cập nhật giá nhiên liệu, cho phép hệ thống phù hợp với các hoạt động khác nhau của trạm — từ các địa điểm độc lập đơn giản đến các dự án yêu cầu tích hợp POS/trạm xăng.</p>
+</div>
+<div class="split">
+<div>
+<h3>Phương pháp A - Điều khiển từ xa (Độc lập)</h3>
+<p>Điều khiển từ xa cầm tay cho phép nhân viên cập nhật giá nhanh chóng mà không cần sử dụng hệ thống POS. Tùy chọn này phù hợp với các địa điểm muốn phương pháp thay đổi giá đơn giản và nhanh chóng.</p>
+<p style="margin-bottom:8px"><strong>Các trường hợp sử dụng điển hình:</strong></p>
+<ul class="checklist">
+<li>Trạm độc lập</li>
+<li>Trang bị thêm nhanh chóng/thiết lập đơn giản</li>
+<li>Các địa điểm không có yêu cầu tích hợp POS</li>
+</ul>
+<a class="more" href="/vi/product-remote.html" style="display:inline-block;margin-top:12px;font-family:var(--fd);font-weight:600;color:var(--orange-2)">Thông số kỹ thuật đầy đủ của điều khiển từ xa không dây →</a>
+</div>
+<div class="media-frame"><img alt="Hai điều khiển từ xa không dây AVS Price Change Control" loading="lazy" src="/assets/shots/IMG-PCU-25-y.jpg"/></div>
+</div>
+<div class="split" style="margin-top:52px">
+<div class="media-frame"><img alt="Thiết bị đầu cuối đếm giá AVS, mặt trước với bàn phím và màn hình" loading="lazy" src="/assets/shots/IMG-PCU-26-y.jpg"/></div>
+<div>
+<h3>Cách B — Thiết bị nhập giá tại quầy trong cửa hàng</h3>
+<p>Thiết bị đầu cuối của quầy được đặt tại quầy thu ngân hoặc phòng điều khiển, cho phép nhân viên cập nhật giá từ bên trong quầy. Nó cung cấp quy trình hoạt động hàng ngày có cấu trúc và có thể được cấu hình để giao tiếp với các hệ thống của bên thứ 3 tùy thuộc vào yêu cầu của dự án.</p>
+<p style="margin-bottom:8px"><strong>Các trường hợp sử dụng điển hình:</strong></p>
+<ul class="checklist">
+<li>Các trạm thích kiểm soát bên cửa hàng</li>
+<li>Nâng cấp từng bước (thiết bị đầu cuối trước, tích hợp sau)</li>
+</ul>
+<a class="more" href="/vi/product-controllers.html" style="display:inline-block;margin-top:12px;font-family:var(--fd);font-weight:600;color:var(--orange-2)">Thông số kỹ thuật đầy đủ của Price Sign Terminal →</a>
+</div>
+</div>
+<div class="split" style="margin-top:52px">
+<div>
+<h3>Phương pháp C - Tích hợp hệ thống POS / trạm xăng (Dựa trên dự án)</h3>
+<p>Đối với các trạm yêu cầu điều khiển tập trung, AVS PCU có thể được cấu hình để nhận cập nhật giá từ môi trường bộ điều khiển POS/trạm xăng. Điều này cho phép quy trình định giá nhất quán trên khắp các cơ sở và hỗ trợ các hoạt động cập nhật giá từ xa.</p>
+<p><strong>Khả năng tương thích của bộ điều khiển/giao thức:</strong> AVS PCU tương thích với các bộ điều khiển trạm xăng dựa trên IFSF phổ biến và chúng tôi tiếp tục mở rộng khả năng tương thích để hỗ trợ các nền tảng bộ điều khiển mới.</p>
+<p style="color:var(--muted);font-style:italic;font-size:.9rem">Khả năng tương thích phụ thuộc vào giao diện địa điểm và phải được xác nhận trong quá trình đánh giá dự án.</p>
+<p style="margin-bottom:8px"><strong>Các trường hợp sử dụng điển hình:</strong></p>
+<ul class="checklist">
+<li>Mạng lưới có thương hiệu và các công ty dầu mỏ, bao gồm Tela</li>
+<li>Trạm có hệ thống trạm xăng tiêu chuẩn</li>
+<li>Các dự án yêu cầu tự động hóa và tích hợp</li>
+</ul>
+</div>
+<div class="media-frame"><img alt="Sơ đồ tích hợp — POS cửa hàng/thiết bị đầu cuối giá và điều khiển từ xa được liên kết bằng cáp tín hiệu với bộ điều khiển PCU và các đơn vị giá trên bảng biển báo giá nhiên liệu" loading="lazy" src="/assets/shots/IMG-PCU-27.jpg"/></div>
+</div>
+<h3 style="margin:52px 0 22px">Hướng dẫn lựa chọn nhanh</h3>
+<table class="dtable">
+<tr><th>Bạn muốn thiết lập đơn giản nhất?</th><td>Điều khiển từ xa (Phương pháp A)</td></tr>
+<tr><th>Muốn kiểm soát phía cửa hàng mà không phụ thuộc vào POS?</th><td>Trạm đếm (Phương pháp B)</td></tr>
+<tr><th>Bạn muốn quy trình làm việc tập trung/mạng?</th><td>Tích hợp POS/trạm xăng (Phương pháp C)</td></tr>
+</table>
+</div>
+</section>
+<!-- S7 · PCU CONSTRUCTION -->
+<section class="section" id="construction" style="scroll-margin-top:120px">
+<div class="container">
+<div class="section-head">
+<span class="kicker">PCU Xây dựng</span>
+<h2>Được xây dựng cho độ tin cậy ngoài trời</h2>
+<p class="section-sub">Cấu trúc kín, kết nối đạt tiêu chuẩn IP, vỏ bền — và thiết kế mô-đun để bảo trì dễ dàng hơn.</p>
+</div>
+<div class="split" style="margin-bottom:52px">
+<div>
+<span class="kicker">Được xây dựng để tồn tại lâu dài, được hỗ trợ để phù hợp</span>
+<h3>Bảo hành và bằng chứng, không chỉ là lời hứa</h3>
+<p>Mỗi PCU đều có một <strong>điều kiện được xác nhận trong báo giá</strong>. Nhóm của chúng tôi đã duy trì việc lắp đặt tại chỗ tại các trạm Petronas và BHP trong <strong>hơn 9 năm</strong>.</p>
+<p style="margin-bottom:0">Chúng tôi cũng ủng hộ những gì chúng tôi xây dựng: AVS đã tự tài trợ hoàn toàn cho việc thay thế bộ bảng mạch khoảng <strong>RM100,000</strong> miễn phí cho khách hàng khi đó là điều đúng đắn cần làm.</p>
+</div>
+<div class="media-frame">
+<img alt="Cận cảnh chữ số giá LED sáng — các đèn LED riêng lẻ tạo thành từng đoạn của ký tự" loading="lazy" src="/assets/shots/IMG-PM-02-digit-led-macro.jpg"/>
+</div>
+</div>
+<div class="grid grid-2">
+<div class="feature">
+<h3>Làm kín &amp; Bảo vệ</h3>
+<p style="margin-bottom:16px">Các mô-đun PCU của chúng tôi được bịt kín bằng silicone công nghiệp và các phương pháp bịt kín bảo vệ để giảm nguy cơ nước xâm nhập và cải thiện độ ổn định lâu dài trong môi trường trạm xăng ngoài trời.</p>
+<div class="media-frame"><img alt="Vỏ silicon hai phần trong suốt đang được đổ lên mô-đun chữ số PCU - cận cảnh làm kín" loading="lazy" src="/assets/shots/IMG-PCU-28.jpg"/></div>
+</div>
+<div class="feature">
+<h3>Đầu nối &amp; cáp IP</h3>
+<p style="margin-bottom:16px">Chúng tôi sử dụng hệ thống đầu nối được cấp bảo vệ IP chuyên dụng để cải thiện độ tin cậy của kết nối trong điều kiện ẩm ướt, đồng thời giúp việc lắp đặt và bảo trì sạch hơn và nhanh hơn.</p>
+<div class="media-frame"><img alt="Đầu nối cáp cấp bảo vệ IP được hiển thị khi chưa cắm và cắm lại với nhau" loading="lazy" src="/assets/shots/IMG-PCU-29-y.jpg"/></div>
+</div>
+<div class="feature">
+<h3>Kết cấu vỏ thiết bị &amp; chống ăn mòn</h3>
+<p style="margin-bottom:16px">Vỏ PCU sử dụng kết cấu bền (bao gồm cả tùy chọn nhôm) để mang lại sự hỗ trợ cơ học chắc chắn và cải thiện khả năng chống ăn mòn khi lắp đặt ngoài trời trong thời gian dài.</p>
+<div class="media-frame"><img alt="Mặt sau của cụm PCU hiển thị phần lắp vỏ và bảng điều khiển" loading="lazy" src="/assets/shots/IMG-PCU-30.jpg"/></div>
+</div>
+<div class="feature">
+<h3>Thiết kế mô-đun (Dễ bảo trì)</h3>
+<p style="margin-bottom:16px">PCU được thiết kế theo các mô-đun nên việc bảo trì có thể được thực hiện bằng cách thay thế mô-đun bị ảnh hưởng thay vì thay đổi toàn bộ thiết bị. Điều này giúp giảm thời gian ngừng hoạt động và đơn giản hóa việc bảo trì lâu dài.</p>
+<div class="media-frame"><img alt="Mặt sau của các mô-đun PCU được gắn trong các phần có bộ điều khiển" loading="lazy" src="/assets/shots/IMG-PCU-31.jpg"/></div>
+</div>
+</div>
+<figure style="margin:44px 0 0">
+<div class="media-frame"><img alt="Tủ mở từ phía sau — bảng điều khiển LED, đầu nối IP được cắm và cáp vòng được gắn bên trong khung nhôm" loading="lazy" src="/assets/shots/IMG-PM-06-cabinet-internals.jpg"/></div>
+<figcaption style="color:var(--muted);font-size:.9rem;margin-top:12px;max-width:760px">Phía sau mặt: bảng điều khiển, đầu nối IP cắm và khóa và vòng dịch vụ được bố trí bên trong khung nhôm, nhờ đó tìm ra lỗi và hoán đổi mô-đun mà không cần tháo toàn bộ thiết bị xuống.</figcaption>
+</figure>
+<div class="split" style="margin-top:52px">
+<div class="media-frame" style="aspect-ratio:4/3">
+<img alt="Màn hình hiển thị giá LED AVS chạy trên trụ bảng giá xăng dầu của trạm Petronas - 97, 95 và giá Diesel bằng chữ số LED màu đỏ" src="/assets/project-petronas-station.jpg"/>
+</div>
+<div>
+<span class="kicker">Bằng chứng địa điểm thực</span>
+<h3>Được lắp đặt và chạy trên cây xăng</h3>
+<p>Được thiết kế để hoạt động liên tục ngày/đêm trong điều kiện trạm xăng ngoài trời.</p>
+</div>
+</div>
+</div>
+</section>
+<section class="section alt">
+<div class="container">
+<div class="cta-band">
+<h2>Sẵn sàng nâng cấp màn hình hiển thị giá xăng của bạn?</h2>
+<p>Hãy cho chúng tôi biết kích thước, số lượng chữ số và màu sắc của trụ bảng giá xăng dầu của bạn và chúng tôi sẽ chỉ định cấu trúc PCU phù hợp — từ xa, thiết bị đầu cuối hoặc POS/trạm xăng — cho mạng lưới trạm của bạn.</p>
+<div class="hero-cta">
+<a class="btn btn-primary btn-lg" href="mailto:info@avs.my">Gửi email — phản hồi trong ngày</a>
+<a class="btn btn-outline btn-lg" href="/vi/quote.html">Yêu cầu báo giá</a>
+<a class="btn btn-ghost-light btn-lg" href="/vi/contact.html">Trao đổi với kỹ sư</a>
+</div>
+</div>
+</div>
+</section>
+</main>
+<footer class="site-footer">
+<div class="container">
+<div class="footer-grid">
+<div class="footer-brand">
+<a class="brand" href="/vi/index.html"><img alt="AVS Display Sdn Bhd" class="brand-logo" src="/assets/avs-logo.png"/><span><span class="bn">AVS Display</span></span></a>
+<p>Bảng LED hiển thị giá xăng dầu, ống LED, mô-đun và biển hiệu ngoài trời — được thiết kế và sản xuất tại Malaysia cho các trạm xăng trong hơn 9 năm.</p>
+<div class="footer-contact">
+<div>Nilai, Negeri Sembilan, Malaysia</div>
+<div>Điện thoại: +60 3-8740 9865 · Di động: +60 17-289 4285</div>
+
+<div>Email: <a href="mailto:info@avs.my">info@avs.my</a></div>
+</div>
+</div>
+<div><h4>Sản phẩm</h4><ul>
+<li><a href="/vi/product-pcu.html">Bộ hiển thị giá xăng dầu</a></li>
+<li><a href="/vi/product-led-tubes.html">Ống LED</a></li>
+<li><a href="/vi/product-led-modules.html">Mô-đun LED</a></li>
+<li><a href="/vi/product-lens-strip.html">Thanh LED thấu kính</a></li>
+<li><a href="/vi/product-edge-lighting.html">Thanh LED chiếu sáng viền</a></li>
+<li><a href="/vi/integrations.html">Tích hợp POS / IFSF</a></li>
+</ul></div>
+<div><h4>Giải pháp</h4><ul>
+<li><a href="/vi/solutions-petrol-stations.html">Trạm xăng</a></li>
+</ul></div>
+<div><h4>Tài liệu</h4><ul>
+<li><a href="/vi/case-studies.html">Dự án thực tế</a></li>
+<li><a href="/vi/certifications.html">Chứng nhận</a></li>
+<li><a href="/vi/guides.html">Hướng dẫn</a></li>
+<li><a href="/vi/faq.html">Câu hỏi thường gặp</a></li>
+<li><a href="/vi/support.html">Hỗ trợ</a></li>
+</ul></div>
+<div><h4>Công ty</h4><ul>
+<li><a href="/vi/about.html">Về AVS</a></li>
+<li><a href="/vi/distributors.html">Nhà phân phối / OEM</a></li>
+<li><a href="/vi/quote.html">Yêu cầu báo giá</a></li>
+<li><a href="/vi/contact.html">Liên hệ</a></li>
+</ul></div>
+</div>
+<div class="footer-bottom">
+<div>© 2026 AVS Display Sdn Bhd (AVS Display Malaysia). Bảo lưu mọi quyền.</div>
+<div>Chứng nhận CE · RoHS · FCC · www.avs.my</div>
+</div>
+</div>
+</footer>
+<script src="/js/main-vi-20261027.js?v=2"></script>
+<a aria-label="Gửi email cho AVS" class="vi-email-float" href="mailto:info@avs.my">Email</a>
+</body>
+</html>
