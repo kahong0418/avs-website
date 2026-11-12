@@ -1,7 +1,7 @@
 import hashlib,json,os,pathlib,shutil,stat,subprocess,sys,tempfile
 from urllib.request import urlopen
-COMMIT='d6eddafd85ed36c511429c1898ed904ebdb2f0e3'
-MANIFEST={'privacy.html': {'allowed_old_sha256': [], 'new_sha256': 'da274cf101807cc9d6ec0737f327a36e2b6cbb865f5097705bc8392929dd1314'}, 'quote.html': {'allowed_old_sha256': ['878bc77fd5285e47c7efe27ed833547b83bfbcc8f099aa919763a51dd6ff54ae'], 'new_sha256': '7473c003fc466ac417c4c09fbfcb1a381cb6d9e3096ba0b0fd0fcd270dd32f0d'}, 'contact.html': {'allowed_old_sha256': ['f41d6db47fe47ede1bf8634e96d6ecc26c9957303095606548f1b0d693d3fb53'], 'new_sha256': '2329c09d6f271959b568387d23b6408112d588e59b47c858ffa6bbdd4c322119'}}
+COMMIT='6661998c5a0fd09661466f7240afc907ca911ba4'
+MANIFEST={'privacy.html': {'allowed_old_sha256': [], 'new_sha256': 'da274cf101807cc9d6ec0737f327a36e2b6cbb865f5097705bc8392929dd1314'}, 'quote.html': {'allowed_old_sha256': ['878bc77fd5285e47c7efe27ed833547b83bfbcc8f099aa919763a51dd6ff54ae', '7473c003fc466ac417c4c09fbfcb1a381cb6d9e3096ba0b0fd0fcd270dd32f0d'], 'new_sha256': 'd23b20ad72546875eda9028d8d9a480092677a15fd77201e01be06f3f36ac979'}, 'contact.html': {'allowed_old_sha256': ['f41d6db47fe47ede1bf8634e96d6ecc26c9957303095606548f1b0d693d3fb53'], 'new_sha256': '2329c09d6f271959b568387d23b6408112d588e59b47c858ffa6bbdd4c322119'}}
 def sha(data):return hashlib.sha256(data).hexdigest()
 def safe_path(root,name):
     relative=pathlib.PurePosixPath(name)
