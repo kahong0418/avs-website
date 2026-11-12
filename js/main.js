@@ -40,6 +40,30 @@
     });
   });
 
+  // Enhanced conversions: read email + phone from the form before it is reset.
+  // gtag hashes these (SHA-256) before sending; GA4 only uses them when
+  // "User-provided data collection" is on. Returns null when nothing usable.
+  var avsUserData = function (f) {
+    try {
+      var get = function (n) {
+        var el = f.querySelector('[name="' + n + '"]');
+        return el ? String(el.value || '').trim() : '';
+      };
+      var ud = {};
+      var email = get('email').toLowerCase();
+      if (/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) { ud.email = email; }
+      var country = get('country').toLowerCase();
+      var d = get('phone').replace(/[^\d+]/g, '');
+      var phone = '';
+      if (/^\+\d{8,15}$/.test(d)) { phone = d; }
+      else if (/^00\d{8,15}$/.test(d)) { phone = '+' + d.slice(2); }
+      else if (/^60\d{8,11}$/.test(d)) { phone = '+' + d; }
+      else if (/^0\d{8,10}$/.test(d) && (country === '' || country === 'my' || country.indexOf('malaysia') !== -1)) { phone = '+6' + d; }
+      if (phone) { ud.phone_number = phone; }
+      return (ud.email || ud.phone_number) ? ud : null;
+    } catch (e) { return null; }
+  };
+
   // Formspree AJAX form handling (quote + contact)
   document.querySelectorAll('form[data-formspree]').forEach(function (f) {
     var note = f.querySelector('.form-note');
@@ -58,6 +82,7 @@
         return;
       }
       if (btn) { btn.disabled = true; btn.textContent = 'Sending…'; }
+      var userData = avsUserData(f);
       fetch(action, {
         method: 'POST',
         body: new FormData(f),
@@ -68,6 +93,7 @@
           if (note) { note.hidden = false; }
           f.querySelectorAll('input,textarea,select').forEach(function (el) { el.disabled = true; });
           if (btn) { btn.textContent = 'Sent ✓'; }
+          if (userData && window.gtag) { try { window.gtag('set', 'user_data', userData); } catch (e) {} }
           if (window.avsTrack) { window.avsTrack('generate_lead', {form_page: location.pathname}); }
         } else {
           return res.json().then(function (d) {
